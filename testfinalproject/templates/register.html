@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CyberSafe</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">  <body>
+      <!-- my css -->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <nav class="navbar navbar-inverse">
+  <div class="container">
+  
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">CyberSafe</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="{{url_for('index')}}">Start Page</a></li>
+        <div class="text-center">
+      </ul>
+
+
+      <li><a href="#"><i class="fa fa-user"></i></a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+</ul>
+</div>
+</nav>
+<div class="container">
+<main>
+        <h1>Register here</h1>
+        <form class="" action="{{url_for('register_success')}}" method="post">
+          <div class="input">
+          <label for="">Name: </label>
+          <input type="name" name="name" value="" required>
+          <div class="input">
+          <label for="">Email: </label>
+          <input type="email" name="email" value="" required>
+          <div class="input">
+          <label for="">Password:</label>
+          <input type="password" name="password" value="" required>
+
+          <button type="submit" name="submit">Register</button>
+        </form>
+    </div>
+  </div>
+</main>
+  </body>
+</html>
